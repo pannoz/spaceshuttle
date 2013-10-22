@@ -1,0 +1,72 @@
+/* General styles */
+
+body {
+	background-color: #f9f9f9;
+	font-size: 100%;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: 300;
+	color: #333;
+}
+h1, p {
+	text-shadow: 1px 1px 1px #fff;
+	text-align: center;
+}
+/* header section */
+
+header h1 {
+	font-family: "Marker Felt";
+	color: #000;
+	font-size: 1.6em;
+	text-align: center;
+}
+nav {
+	position: relative;
+	padding: .2em;
+}
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+nav ul li {
+	display: inline-block;
+	margin-right: .3em;
+}
+nav ul li a {
+	font-weight: normal;
+	display: inline-block;
+	background: #eee;
+	padding: 5px 10px;
+	color: #333;
+	text-decoration: none;
+	border-radius: 5px;
+	-webkit-transition: all .2s ease;
+}
+nav ul li a:hover {
+	background: #e0e0e0;
+	box-shadow: 0 0 5px #aaa;
+	color: #333;
+}
+/* Content section */
+
+article > section {
+	display: none;
+}
+article > section.active {
+	display: block;
+	color: black;
+}
+table {
+	width: 80%;
+background-color: rgba(7, 7, 7, 0.2);
+	margin-bottom: 1em;
+	margin-left: 12%;
+}
+tr {
+	text-align: center;
+}
+
+thead {
+	font-weight: bold;
+}

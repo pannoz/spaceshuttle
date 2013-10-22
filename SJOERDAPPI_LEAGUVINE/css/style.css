@@ -1,0 +1,132 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* Menu*/
+header {
+	display: inline-block;
+	width: 100%;
+}
+
+nav {
+    position: relative;
+    padding: .2em;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+nav ul li {
+    display: inline-block;
+    margin-right: .3em;
+}
+nav ul li a {
+    font-weight: normal;
+    display: inline-block;
+    background: #eee;
+    padding: 5px 10px;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    -webkit-transition: all .2s ease;
+}
+nav ul li a:hover {
+    background: #e0e0e0;
+    box-shadow: 0 0 5px #aaa;
+    color: #333;
+}
+
+
+/* Content */
+#loadcontainer {
+	left: 50%;
+	margin: 50px 0;
+	position: fixed;
+}
+#loader {
+	display: none;
+	background-color: rgba(0,0,0,0);
+	opacity: .6;
+	border-radius: 50px;
+	margin: 5% auto;
+	border: 10px solid #000;
+	border-top: 10px solid rgba(0,0,0,0);
+	border-left: 10px solid rgba(0,0,0,0);
+	width: 50px;
+	height: 50px;
+	margin-left: -50%;
+}
+
+#loader.loading {
+	display: block;
+	animation: loader .5s infinite linear;
+	-moz-animation: loader .5s infinite linear;
+	-webkit-animation: loader .5s infinite linear;
+}
+
+article {
+	padding: 20px;
+	display: inline-block;
+}
+
+/* Table styles */
+table, th, td {
+	text-align: left;
+}
+
+th {
+	padding-right: 40px;
+}
+
+td {
+	padding: 10px 50px 10px 0;
+}
+thead {
+    font-weight: bold;
+}
+
+article {
+	display: none;
+}
+
+article.active {
+	display: block;
+}
+
+
+article > section.active {
+    display: block;
+    color: black;
+}
+table {
+    width: 80%;
+    background-color: rgba(7, 7, 7, 0.2);
+    margin-bottom: 1em;
+    margin-left: 12%;
+}
+tr {
+    text-align: center;
+}
+
+thead {
+    font-weight: bold;
+}
