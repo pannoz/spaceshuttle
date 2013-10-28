@@ -1,5 +1,5 @@
 
-
+/* Waarom staat dit buiten je app? Je moet hem in functions zetten */
 'use strict';
 
 var APP = APP || {};
@@ -90,7 +90,7 @@ var APP = APP || {};
 				'/game': function() {
 					APP.page.game();
 				},
-
+				/* Movies staat nog in je app */
 				'/movies': function() {
 					APP.page.movies();
 				},
@@ -104,23 +104,23 @@ var APP = APP || {};
 
 		change: function () {
 
-            var route = window.location.hash.slice(2),
-            	articles = qwery('article[data-route]'),
-            	article = qwery('[data-route=' + route + ']')[0];  
-
-            // Show active article, hide all other
-            if (article) {
-            	for (var i=0; i < articles.length; i++){
-            		articles[i].classList.remove('active');
-            	}
-            	article.classList.add('active');
+			var route = window.location.hash.slice(2),
+			articles = qwery('article[data-route]'),
+			article = qwery('[data-route=' + route + ']')[0];  
+	
+			// Show active article, hide all other
+			if (article) {
+	            		for (var i=0; i < articles.length; i++){
+	            			articles[i].classList.remove('active');
+	            		}
+				article.classList.add('active');
 			}
-
+	
 			// Default route
 			if (!route) {
-            	articles[0].classList.add('active');
+				articles[0].classList.add('active');
 			}
-
+	
 		}
 
 	};
